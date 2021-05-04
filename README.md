@@ -13,7 +13,7 @@ npm i --save cassandra-helper
 ## Usage
 
 ```jsx
-const cassutils = require('cassandra-helper');
+const cassiUtils = require('cassandra-helper');
 
 const config = {
     contactPoints: ['h1', 'h2'],
@@ -22,22 +22,14 @@ const config = {
 };
 
 // A generic callback which contains three parameters [err, data, msg]
-const functioncallback = (err, data, msg) {
+const callback = (err, data, msg) {
     console.log({err, data, msg})
 }
-const query = "SELECT * FROM table1 WHERE id = ? and name = ?" // sample query
+const query = "SELECT * FROM table1 WHERE id = ? AND name = ?" // sample query
 const params = [1, 'name_1']; // sample parameter for above query
 
-cassutils.createConnectionPool(config);
-cassutils.connectAndRun(functioncallback, 
-    cassutils.queryErrSucc(query, params, 
-        (err) => {
-            functioncallback(err, null, 'error happened'); 
-        }, (data) => {
-            functioncallback(null, data, 'success');
-        }
-    )
-);
+cassiUtils.creatConnection(config);
+cassiUtils.queryReturn(query, params, callback, 'Fetch success message', 'Fetch failure message');
 ```
 
 ## License
