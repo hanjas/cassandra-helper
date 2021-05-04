@@ -1,6 +1,6 @@
 {
   "name": "cassandra-helper",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Cassandra util functions",
   "main": "src/index.js",
   "scripts": {
