@@ -1,6 +1,6 @@
 {
   "name": "cassandra-helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cassandra util functions",
   "main": "src/intex.js",
   "scripts": {
@@ -25,5 +25,5 @@
   "bugs": {
     "url": "https://github.com/hanjas/cassandra-helper/issues"
   },
-  "homepage": "https://github.com/hanjas/mysql-utils-js/blob/master/README.md"
+  "homepage": "https://github.com/hanjas/cassandra-helper/blob/master/README.md"
 }

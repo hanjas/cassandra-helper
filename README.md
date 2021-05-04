@@ -2,7 +2,7 @@
 
 > Cassandra helper functions which will make your code easier to fetch and write data to database. This library supports CQL transactions in a cleaner way. Its a wrapper upon cassandra-driver.
 
-[![NPM](https://img.shields.io/npm/v/mysql-utils-js.svg)](https://www.npmjs.com/package/mysql-utils-js) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/cassandra-helper.svg)](https://www.npmjs.com/package/cassandra-helper) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
